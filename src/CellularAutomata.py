@@ -5,8 +5,9 @@ Created on Aug 25, 2010
 '''
 
 from MappingTable import MappingTable
+import threading
 
-class Cell:
+class Cell(threading.Thread):
     '''
     This class represents a cell of an automata
     '''
@@ -16,7 +17,5 @@ class Cell:
     def receiveSignal(self):
         print self.mappingTable.map('K', 'empty')
         
-
-
-        
-        
+    def run(self):
+        print self.receiveSignal()

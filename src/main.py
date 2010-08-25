@@ -9,4 +9,4 @@ from CellularAutomata import Cell
 
 if __name__ == '__main__':
     cell = Cell()
-    cell.receiveSignal()
+    cell.start()
