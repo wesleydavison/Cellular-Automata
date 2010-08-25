@@ -10,3 +10,4 @@ from CellularAutomata import Cell
 if __name__ == '__main__':
     cell = Cell()
     #cell.start()
+    ''' At branch master'''
